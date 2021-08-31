@@ -173,7 +173,7 @@
             $buy = readline("Do you want to buy your items? (Y/N) ");
             switch(strtoupper($buy)){
                 case "Y":
-                    $message = $cart->canYouBuy() . "\nYou have \${$person->getCash()}!";
+                    $message = $cart->canYouBuy() . "\nYou left with \${$person->getCash()}!";
                     die($message);
                 case "N":
                     $isPromptActive = false;
