@@ -4,7 +4,7 @@
 
         private array $groceryList = [];
 
-        public function listOfGroceries(string $name, int $price, int $quantity){
+        public function addGroceries(string $name, int $price, int $quantity){
             $this->groceryList[] = [$name, $price, $quantity];
         }
 
@@ -102,12 +102,12 @@
 
     $cart = new ShoppingCart($person);
     $narvesen = new Narvesen();
-    $narvesen->listOfGroceries("Apple", 5, 50);
-    $narvesen->listOfGroceries("Banana", 6, 20);
-    $narvesen->listOfGroceries("Onion", 2, 32);
-    $narvesen->listOfGroceries("Soul", 25, 10);
-    $narvesen->listOfGroceries("Narrowband Filter", 26, 100);
-    $narvesen->listOfGroceries("Glock", 17, 75);
+    $narvesen->addGroceries("Apple", 5, 50);
+    $narvesen->addGroceries("Banana", 6, 20);
+    $narvesen->addGroceries("Onion", 2, 32);
+    $narvesen->addGroceries("Soul", 25, 10);
+    $narvesen->addGroceries("Narrowband Filter", 26, 100);
+    $narvesen->addGroceries("Glock", 17, 75);
 
 
 
